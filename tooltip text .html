@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+	  <style>
+       .tooltip{
+	      position:relative;
+		  display:inline-block;
+		  border-bottom: 1px dotted;
+	    }	
+		.tooltiptext{
+			visibility: hidden;
+			width: 120px;
+			background-color: black;
+			color:white;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 1;
+			top: -5px;
+            left: 105%; 
+	     }
+
+	   .tooltip:hover .tooltiptext{
+		   visibility: visible;
+		 
+		 }	
+       		
+	  </style> 
+	</head>
+	<body>
+	 <p>under tooltip text</p>
+	 <div class="tooltip">mouse text
+	 <span class="tooltiptext">sajib pal</span>
+	 </div>
+	 
+	 
+	</body>
+	
+	
+</html>
