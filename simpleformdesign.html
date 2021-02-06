@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+<head>
+ <style>
+    .move{
+	  
+	  position:absolute;
+	  top:30%;
+	  left:30%;
+	  width:35%;
+	  height:auto;
+	  box-sizing: border-box;
+	  border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+   }
+	 
+
+	
+  	input[type=text],input[type=password]{
+	  
+	  width:55%;
+	  padding:10px;
+	  margin-bottom:5px;
+	  border: 1px solid #ccc;
+      border-radius: 4px;
+	  
+	}
+  	select{
+	  
+	  width:60%;
+	  padding:10px;
+	  margin-bottom:5px;
+	  
+	}
+  	input[type=submit]{
+	  
+	background-color:#4CAF50;
+    color: white;
+    padding: 12px 20px;
+	margin-top:15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:60px;
+	  
+	}	
+ 
+  label{
+  
+    padding: 15px 12px 12px 0;
+    display: inline-block;
+	font-size:18px;
+	width:26%;
+	
+  }	
+  	
+  </style>
+</head> 
+<body>
+  
+ <div class="move">
+ 
+   
+   <form action="" method="">
+   
+    <label>Login Type :</label>
+    <select  name="log" >
+	  <option value="">Select Type</option>
+	  <option value="student">Student</option>
+	  <option value="Admin">Admin</option>   
+    </select><br>
+    <label>Username :</label>
+    <input type="text" name="uname" placeholder="Enter Username" disabled>
+	<label>Password :</label>
+	<input type="password" name="password" placeholder="Enter password" >
+	<label>Username :</label>
+    <input type="text" name="uname" placeholder="Enter Username" >
+	<label>Password :</label>
+	<input type="password" name="password" placeholder="Enter password" >
+	
+	<input type="submit" name="login" value="Login"> <br><br>
+	
+	</form>
+ </div>  
+</body>
+</html>

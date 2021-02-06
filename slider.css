@@ -1,0 +1,102 @@
+body{
+ margin:0;
+ padding:0;
+ font-family:sans-serif; 
+}
+.banner{   /*background image properity*/
+	
+	width:100%;
+	height:100vh;
+	background:url(goldfish.jpg);
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	
+}
+.content{
+	
+ padding:50px 100px;
+}
+.content h2{    /*text header properity*/
+	
+ margin:0 0 20px;
+ padding:0;
+ font-size:28px; 
+}
+.content p{
+	
+	font-size:15px;
+}
+.slider-content{
+	
+	position:fixed;
+	top:50%;
+	left:-350px;        /*left side hide korar jonno*/
+	transform:translateY(-50%);
+	width:350px;
+	height:auto;
+	padding:40px;
+	background:#fff;
+	box-shadow:0 20px 50px rgba(0,0,0,.5);
+	box-sizing:border-box;
+	transition:0.5s;
+}
+.slider-content.active{   /*left side hide theke show korar jonno*/
+	
+  left:0;
+ }
+.slider-content input,      /*form input field properity */
+.slider-content textarea{
+	width:100%;
+	height:25px;
+	padding:5px;
+	margin-bottom:10px;
+	box-sizing:border-box;
+	border:1px solid rgba(0,0,0,.5);
+	outline:none;
+}
+.slider-content textarea{
+	
+ height:65px;
+ resize:none;
+ }
+.slider-content h2{   /*form header properity */
+	
+	margin:0 0 20px;
+	padding:0;
+	
+}
+
+.slider-content input[type="submit"]{  /*submit button properity */
+	
+	background:#6b3aff;
+	color:#fff;
+	cursor:pointer;
+	border:none;
+	font-size:12px;
+}
+.toggle{           /*mail box show size*/
+	
+	position:absolute;
+	top:0;
+	right:-48px;
+	width:48px;
+	height:48px;
+	line-height:48px;
+	text-align:center;
+	cursor:pointer;
+	background:#f00;
+	
+}
+.toggle:before{    /*click ar age mail icon dekhabe*/
+	
+	content:'\f0e0';  /*mail icon code*/  /*font awesome icon 4.7,fontawesome.com,Icons,search mail,click,code copy*/
+	font-family:fontAwesome;
+	color:#fff;
+	font-size:20px;
+	
+}
+.toggle.active:before{  /*click ar pore close icon dekhabe*/
+	
+	content:'\f00d'; /*close icon code*/   /*font awesome icon 4.7,fontawesome.com,Icons,Search close,click,code copy*/
+}

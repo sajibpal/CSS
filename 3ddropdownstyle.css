@@ -1,0 +1,35 @@
+/*using for only drowpdown box link*/
+.dropbtn {
+	        display:block;
+			color: white;
+			text-align: center;
+			padding: 5px 6px;
+			text-decoration: none;
+            }		
+
+		li.dropdown {
+			display: inline-block;
+		     }
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			width: 150px;
+			z-index: 1;
+		        }
+
+		.dropdown-content a {
+			color: white;
+			padding:8px;
+			position:relative;
+			top:10px;
+			text-decoration: none;
+			display: block;
+			text-align: center;
+		     }
+
+		.dropdown-content a:hover {background-color: #f1f1f1}/*no work cause 3dstyle li a hover ta work korche */
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		 }

@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="slider.css" rel="stylesheet">   <!--fontawesome cdn,bootstrapcdn.com,dropdown(HTML),copy code -->
+</head>
+<body>
+ <div class="slider-content">
+  <div class="toggle"></div>
+  <h2>Contact Us</h2>
+	 <form>
+	     <input type="text" name="" placeholder="Name" required="">
+	     <input type="email" name="" placeholder="Email" required="">
+	     <input type="number" name="" placeholder="Number" required="">
+         <textarea rows="5" placeholder="Message"></textarea>		 
+	     <input type="submit" name="" value="submit" class="btn">
+	 </form>
+ </div>
+ <div class="banner"></div>
+ <div class="content">
+   <h2>What is your country about<h2>
+    <p>Bangladesh, to the east of India on the Bay of Bengal, 
+	is a South Asian country marked by lush greenery and many waterways. 
+	Its Padma (Ganges), Meghna and Jamuna rivers create fertile plains, 
+	and travel by boat is common. On the southern coast, the Sundarbans, 
+	an enormous mangrove forest shared with Eastern India, is home to the royal Bengal tiger.
+	
+	Capital: Dhaka
+	Dialing code: +880
+	Prime minister: Sheikh Hasina
+	President: Abdul Hamid
+	Population: 164.7 million (2017) World Bank.</p>
+	
+ </div>  
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>  <!--jquery cdn ,code.jquery.com,Query Core 3.3.1 - uncompressed(click),copy script code   --> 
+   <script type="text/javascript">
+     $(document).ready(function(){
+	   $(".toggle").click(function(){
+	    $(".slider-content").toggleClass("active")
+		$(".toggle").toggleClass("active")
+	   })
+	 })
+   </script> 
+</body>
+</html>

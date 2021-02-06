@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="menu.css">
+ 
+</head> 
+<body>
+   <ul>
+     <li class="active"><a href="#">Home</a></li>
+	 <li><a href="#">menu</a></li>
+	 <li><a href="#">Option</a></li>
+	 <li><a href="#">Setting</a></li>
+	 <li><a href="#">about</a></li>
+	 <li class="slide"></li>
+   </ul>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+     $("li").on("click",function(){
+         $(this).siblings().removeClass("action")
+          $(this).addClass("action")
+      })
+    })
+  </script>	
+ </body>
+</html>

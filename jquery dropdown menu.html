@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+ <html>
+    <head>
+	  <link rel="stylesheet" href="dropdown.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script>
+	     $(document).ready(function(){
+		   $(".drop ul li").hover(function(){
+			 $(this).find("ul").stop().slideToggle(300);  
+			});
+         });
+	   </script>
+	  </head>
+	  <body>
+      <nav class="drop">
+		<ul>
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">News</a></li>
+		  <li><a href="#">menu<img src="dropdown.png"></a>
+		     <ul>
+				 <li><a href="#">Link 1</a></li>
+				 <li><a href="#">Link 2</a></li>
+				 <li><a href="#">Link 3</a></li>
+				 <li><a href="#">Link 4</a></li>
+				 
+		     </ul>
+		  </li>
+		  <li><a href="#home">project<img src="dropdown.png"></a>
+		      <ul>
+				 <li><a href="#">Link 1</a></li>
+				 <li><a href="#">Link 2</a></li>
+				 <li><a href="#">Link 3</a></li>
+				 <li><a href="#">Link 4</a></li>
+				 
+		     </ul>
+		  </li>
+		  <li><a href="#news">contact</a></li>
+		  <li><a href="#news">about</a></li>
+		  
+		  
+         </ul>
+       </nav>		 
+	    
+	</body>
+</html>	
