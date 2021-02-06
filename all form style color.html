@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+
+  * {
+    box-sizing: border-box;
+  }
+  input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  input[type=submit]{
+   background-color: #4CAF50;
+   width:8%;
+   padding:10px 15px;
+   position:relative;
+   left:520px;
+   top:5px;
+   border-radius:4px;
+   color:white;
+   cursor:pointer;
+   border:none;
+      
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+   }
+  label{
+    padding: 12px 12px 12px 0;
+    display: block;
+   }
+   
+  div.mainborder{
+   background-color:#f2f2f2;
+   border-radius:14px;
+   padding:20px;
+  
+  
+  }
+  div.lavel2{
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+  }
+
+ div.field {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+
+/* Clear floats after the columns */
+ div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  </style>
+</head>
+<body>
+
+<h2>Responsive Form</h2>
+
+<div class="mainborder">
+  <form>
+    <div class="row">
+      <div class="lavel2">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="field">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="lavel2">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="field">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+     <div class="lavel2">
+        <label for="country">Country</label>
+      </div>
+     <div class="field">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="lavel2">
+	  <label for="subject">Subject</label>
+      </div>
+     <div class="field">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ 
+
+ .example2 {
+    border-image: url(index.png) 30 round;
+	border-image-width:10px;
+    padding:35px;
+    background: yellow;
+    background-clip: padding-box;
+  }
+ 
+ .example3 {
+    border-image: url(index.png) 30 round;
+	border-image-width:10px;
+    padding:20px;
+    background-image:url(Blue.jpg);
+	background-size:contain;
+    background-clip: content-box;
+  }
+ </style>
+</head>
+<body>
+
+<h1>The background-clip Property</h1>
+
+ <div class="example2">
+	<h2>Lorem Ipsum Dolor</h2>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipisci</p>
+ </div>
+ <p> background clip content-box;</p>
+ 
+ <div class="example3">
+	<h2>Lorem Ipsum Dolor</h2>
+	<p>Lorem ipsum dolor sit amet, consectetuer</p>
+ </div>
+
+</body>
+</html>
